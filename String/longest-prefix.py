@@ -45,7 +45,7 @@ def longestCommonPrefix(strs):
         for s  in strs:
             if s[i]!=char:
                 return shortest_str[:i]
-                
+            
     return shortest_str
 
 result = longestCommonPrefix(strs)

@@ -47,22 +47,22 @@ Constraints:
 
 
 
-# def maximumSubarraySum(nums, k):
-#     n= len(nums)
-#     max_sum = sum(nums[0:k])
-#     current_sum = max_sum
-#     for i in range(1,n - k + 1):
-#         current_sum = current_sum - nums[i - 1]  +nums[i + k - 1]
-#         if current_sum > max_sum:
-#             max_sum = current_sum
-#     return max_sum
+def maximumSubarraySum(nums, k):
+    n= len(nums)
+    max_sum = sum(nums[0:k])
+    current_sum = max_sum
+    for i in range(1,n - k + 1):
+        current_sum = current_sum - nums[i - 1]  +nums[i + k - 1]
+        if current_sum > max_sum:
+            max_sum = current_sum
+    return max_sum
 
 
-# # Example usage
-# nums = [1, 5, 4, 2, 9, 9, 9]
-# k = 3
-# result = maximumSubarraySum(nums, k)
-# print(result)  # Output: 15
+# Example usage
+nums = [1, 5, 4, 2, 9, 9, 9]
+k = 3
+result = maximumSubarraySum(nums, k)
+print(result)  # Output: 15
 
 
 def mimumSubarraySum(nums, k):
