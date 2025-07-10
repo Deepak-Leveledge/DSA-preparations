@@ -45,7 +45,24 @@ def reverse(arr, start, end):
         end -= 1
 
 
-        
+
 arr = [1, 2, 3, 4, 5]
 rotate_left(arr, 2)
 print("Rotated array:", arr)  # Output: [3, 4, 5, 1, 2]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
